@@ -1,0 +1,141 @@
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	display: block;
+	background: rgb(66, 23, 23);
+	-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#game {
+	width:100%;
+	padding:0 0px;
+	background: rgb(66, 23, 23);
+	display: block;
+	position: relative;
+}
+#canvas {
+	display:block;
+	margin:60px auto;
+	//border:1px solid rgb(230,230,230);
+	clear:both;
+}
+#mainScreen {
+	width:100%;
+	
+	background: rgb(236, 60, 65);
+	background: -moz-linear-gradient(top,  rgb(255, 107, 110) 0%,rgb(245, 59, 65) 44%,rgb(227,30,36) 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top,  rgb(255, 107, 110) 0%,rgb(245, 59, 65) 44%,rgb(227,30,36) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgb(255, 107, 110) 0%,rgb(245, 59, 65) 44%,rgb(227,30,36) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgb(255, 107, 110) 0%,rgb(245, 59, 65) 44%,rgb(227,30,36) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgb(255, 107, 110) 0%,rgb(245, 59, 65) 44%,rgb(227,30,36) 100%); /* W3C */
+	position: absolute;
+  	overflow: hidden;
+  	margin: 0 auto;
+  	left:0;
+  	right:0;
+	
+	text-align:center;
+}
+#mainScreen #logo {
+	margin:20px auto;
+	display:block;
+	width:320px;
+}
+#game .twoPlayers, #game .compPlay {
+	margin: 5% 0px;
+	display:block;
+	cursor: pointer;
+	margin-left: 70px;
+
+}
+#game .compPlay {
+	margin-top:0px !important;
+	margin-left:0px;
+}
+#gameScreen {
+	
+	text-align:center;
+	
+	
+}
+.backButton {
+	cursor:pointer;
+	float:left;
+}
+.checkTurn {
+	padding-top: 10px;
+	color: rgb(156, 67, 67);
+	display:block;
+	font-weight:bold;
+}
+.addTurn {
+	color:rgb(200,200,200);
+}
+.addTurn:after {
+	content:".";
+	color:rgb(100,250,200);
+	font-size:2em;
+	font-weight:bold;
+	margin-left: 10px;
+}
+.reset {
+	color: rgb(240, 190, 190);
+	text-transform:uppercase;
+	float:right;
+	padding: 15px 15px 15px 15px;
+	cursor: pointer;
+	background: darkred;
+	border-radius: 23px 100px/30px;
+}
+#gameOver {
+	position:absolute;
+	top:0;
+	width:100%;
+	
+	display: none;
+	background: rgba(10,10,10,.8);
+}
+#gameOver .setGameOver {
+	
+	/* background: rgba(9, 8, 8, 0.8); */
+	width: 300px;
+	overflow:hidden;
+	margin:0 auto;
+	margin-top: 140px;
+	padding:20px;
+	-webkit-animation: popUp 1s ease-in;
+	overflow:hidden;
+}
+.playAgain {
+	cursor: pointer;
+	float:left;
+	margin-left: 50px;
+}
+.winner {
+	color:rgb(200,200,200);
+	text-align:center;
+	font-size:20px;
+	text-transform:uppercase;
+	padding:10px 20px;
+}
+@-webkit-keyframes popUp {
+	0% {
+		opacity:0;
+				
+	}
+	50% {
+		opacity:.5;
+		
+	}
+	100% { opacity:1;
+		
+	}
+}

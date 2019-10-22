@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zero Cata</title>
+<meta name="viewport" content="width=device-width, 
+    user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<section id="game">
+
+<!-- Menu screen  -->
+<header id="mainScreen">  
+	<img id="logo" src="zerocata.png">
+	<span class="twoPlayers"> <img src="2player.png"></span>
+	<span class="compPlay"> <img src="playwithcomp.png"></span>
+	
+</header>
+
+<!-- game screen  -->
+<div id="gameScreen">
+<span class="reset"> Reset </span>
+<span class="backButton"><img src="backButton.png"></span>
+<canvas id="canvas" width="320px" height="310px">Your browser does not support canvas</canvas>
+<span class="checkTurn"></span>
+<span class="checkTurn"></span>
+</div>
+
+
+
+<nav id="gameOver">
+	<div class="setGameOver">
+	<h2 class="winner">Winners</h2>
+	<span class="backButton"><img src="backButton.png"></span>
+	<span class="playAgain"><img src="playAgain.png"></span>
+	</div>
+</nav>
+
+</section>                                             
+
+
+<script src="mouse.js"></script>
+<script src="cross.js"></script>
+<script src="circle.js"></script>
+<script src="boxes.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+  margin:0;
+  padding:0;
+}
+#game {
+  width:100%;
+  display: block;
+}
+#canvas {
+  border:2px dotted black;
+  background:black;
+  display: block;
+  margin:0 auto;
+}
+.text {
+  background:none;
+  max-width:40px;
+  max-height:40px;
+  position: absolute;
+  top:10px;
+  right:20px;
+  font-weight:bold;
+  font-size: 1.5em;
+  color: red;
+  border:none;
+}
+
+.text + .text {
+  background: rgb(0,0,0,.5);
+  max-width:240px;
+  width:200px;
+  color : white;
+
+  right : 100px;
+}
+
+#gOver {
+  background: rgba(255,255,255,.5);
+  text-align: center;
+  width :400px;
+  height : 400px;
+  position: absolute;
+  top:30%;
+  left:30%;
+  display:none;
+}
